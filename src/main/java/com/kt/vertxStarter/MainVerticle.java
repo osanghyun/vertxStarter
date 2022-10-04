@@ -11,11 +11,12 @@ import io.vertx.ext.web.handler.BodyHandler;
 import io.vertx.ext.web.handler.TimeoutHandler;
 
 public class MainVerticle extends AbstractVerticle {
+
+  private final AppConfig appConfig = new AppConfig();
+  private final MemberService memberService = appConfig.memberService();
   public static void main(String[] args) {
     Vertx.vertx().deployVerticle(new MainVerticle());
   }
-  private final AppConfig appConfig = new AppConfig();
-  private final MemberService memberService = appConfig.memberService();
 
   @Override
   public void start(Promise<Void> startPromise) throws Exception {
@@ -34,7 +35,6 @@ public class MainVerticle extends AbstractVerticle {
     router.delete("/member").handler(this::deleteMember);
 
     vertx.createHttpServer().requestHandler(router).listen(9090);
-
   }
 
   private void findAll(RoutingContext ctx) {
