@@ -1,0 +1,51 @@
+[
+  {
+    "name":"오상현",
+    "position":"사원",
+    "part":"Dev Lead",
+    "role":"백엔드 개발"
+  },
+  {
+    "name":"김성화",
+    "position":"대리",
+    "part":"Dev Lead",
+    "role":"개발 총괄 리드"
+  },
+  {
+    "name":"정성우",
+    "position":"대리",
+    "part":"Frontend/BFF",
+    "role":"프론트엔드 개발 리드"
+  },
+  {
+    "name":"김세진",
+    "position":"사원",
+    "part":"Frontend/BFF",
+    "role":"프론트엔드 개발"
+  },
+  {
+    "name":"이승연",
+    "position":"대리",
+    "part":"Interface Backend",
+    "role":"인터페이스 개발 리드"
+  },
+  {
+    "name":"사봉준",
+    "position":"사원",
+    "part":"Interface Backend",
+    "role":"인터페이스 개발"
+  },
+  {
+    "name":"최승훈",
+    "position":"대리",
+    "part":"BizLogic Backend",
+    "role":"비즈니스로직 개발 리드"
+  },
+  {
+    "name":"오현지",
+    "position":"사원",
+    "phoneNo":"010-1234-5678",
+    "part":"BizLogic Backend",
+    "role":"비즈니스로직 개발"
+  }
+]
