@@ -4,6 +4,7 @@ import com.kt.vertxStarter.service.MemberService;
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.Promise;
 import io.vertx.core.Vertx;
+import io.vertx.core.json.JsonArray;
 import io.vertx.core.json.JsonObject;
 import io.vertx.ext.web.Router;
 import io.vertx.ext.web.RoutingContext;
@@ -83,12 +84,8 @@ public class MainVerticle extends AbstractVerticle {
   }
 
   private void loadJsonFile(String path){
-    vertx.fileSystem().readFile(path, result -> {
-      if (result.succeeded()) {
-        memberService.upload(result.result().toJsonArray());
-      } else {
-        System.err.println("data.json readFile Error" + result.cause());
-      }
-    });
+    vertx.fileSystem().readFile(path)
+      .onSuccess(result-> memberService.upload(new JsonArray(result)))
+      .onFailure(throwable -> System.err.println("data.json "+ throwable));
   }
 }
