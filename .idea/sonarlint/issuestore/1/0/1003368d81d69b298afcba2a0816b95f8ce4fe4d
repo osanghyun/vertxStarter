@@ -1,0 +1,9 @@
+
+u
+java:S1192>"ZDefine a constant instead of duplicating this literal "text/plain; charset=utf-8" 3 times.(é »ûüÿÿÿÿ
+h
+java:S1192,"MDefine a constant instead of duplicating this literal "content-type" 5 times.(¶§Ìüÿÿÿÿ
+c
+java:S1192"HDefine a constant instead of duplicating this literal "/member" 4 times.(ã”“•øÿÿÿÿ
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(èÙ‹
+N	java:S106Y"9Replace this use of System.out or System.err by a logger.(¦‰ç·
