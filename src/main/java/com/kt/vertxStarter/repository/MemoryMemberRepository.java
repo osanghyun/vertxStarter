@@ -7,7 +7,15 @@ import java.util.List;
 import java.util.Map;
 
 public class MemoryMemberRepository implements MemberRepository{
-  private static Map<String, Member> store = new HashMap<>();
+  private static final Map<String, Member> store = new HashMap<>();
+  private static final MemoryMemberRepository memoryMemberRepository = new MemoryMemberRepository();
+
+  private MemoryMemberRepository() {}
+
+  public static MemoryMemberRepository getInstance() {
+    return memoryMemberRepository;
+  }
+
 
   @Override
   public List<Member> findAll() {

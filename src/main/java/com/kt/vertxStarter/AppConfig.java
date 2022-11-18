@@ -7,7 +7,7 @@ import com.kt.vertxStarter.service.MemberServiceImpl;
 
 public class AppConfig {
   public MemberRepository memberRepository() {
-    return new MemoryMemberRepository();
+    return MemoryMemberRepository.getInstance();
   }
 
   public MemberService memberService() {

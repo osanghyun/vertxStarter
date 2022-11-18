@@ -29,6 +29,7 @@ application {
 
 dependencies {
   implementation("com.google.code.gson:gson:2.9.0")
+  implementation ("io.netty:netty-resolver-dns-native-macos:4.1.68.Final:osx-aarch_64")
   implementation(platform("io.vertx:vertx-stack-depchain:$vertxVersion"))
   implementation("io.vertx:vertx-web")
   testImplementation("io.vertx:vertx-junit5")
